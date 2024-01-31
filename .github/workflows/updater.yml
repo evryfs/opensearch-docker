@@ -65,7 +65,7 @@ jobs:
         fi
 
     - name: Create PR
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v6
       with:
         base: ${{ steps.update.outputs.branch }}
         branch: "opensearch-exporter/bump-${{ steps.update.outputs.version }}"
