@@ -54,7 +54,7 @@ jobs:
         fi
 
     - name: Create PR
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v6
       with:
         branch: "opensearch-exporter/bump-${{ steps.update.outputs.version }}"
         title: "Bump to opensearch-${{ steps.update.outputs.version }} with prometheus-exporter-plugin-for-opensearch-${{ steps.update.outputs.pluginversion }}"
